@@ -1,14 +1,39 @@
 [
   {
-    "Id": 1,
+    "id": 1,
     "Name": "Personal Loan",
     "Descripcion": "A flexible loan for various personal expenses",
-    "UserId": 1
+    "ClienteId": 1,
+    "Monto": 10000,
+    "Plazo": "2021-01-01T00:00:00.000Z",
+    "Tasa": 0.1,
+    "Fecha": "2021-01-01T00:00:00.000Z",
+    "Estado": 1,
+    "Tipo" : { "Name" :  "Prestamo de autos"}
   },
   {
     "Id": 2,
-    "Name": "Home Mortgage",
-    "Descripcion": "Financing to purchase or refinance a home"
+    "Name": "Prestamo 2",
+    "Descripcion": "descripcion del segundo prestamo",
+    "ClienteId": 1,
+    "Monto": 54000,
+    "Plazo": "2021-01-01T00:00:00.000Z",
+    "Tasa": 0.1,
+    "Fecha": "2021-01-01T00:00:00.000Z",
+    "Estado": 1,
+    "Tipo" : { "Name" :  "Prestamo de casas"}
+  },
+  {
+    "Id": 3,
+    "Name": "Prestamo coso",
+    "Descripcion": "Para comprar un auto",
+    "ClienteId": 1,
+    "Monto": 20000,
+    "Plazo": "2021-01-01T00:00:00.000Z",
+    "Tasa": 0.1,
+    "Fecha": "2021-01-01T00:00:00.000Z",
+    "Estado": 1,
+    "Tipo": { "Name": "Prestamo de autos" }
   },
   {
     "Id": 3,

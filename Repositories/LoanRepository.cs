@@ -10,7 +10,7 @@ namespace AndisbankAPI_GraphQL.Repositories
         {
             try
             {
-                string jsonFilePath = "./loans.json";
+                string jsonFilePath = "Json/loans.json";
                 List<Loan> resultList = new List<Loan>();
                 if (System.IO.File.Exists(jsonFilePath))
                 {

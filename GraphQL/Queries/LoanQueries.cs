@@ -5,7 +5,7 @@ using AndisbankAPI_GraphQL.Repositories;
 
 namespace AndisbankAPI_GraphQL.GraphQL.SchemaGraph
 {
-    public class LoanQueries: Schema
+    public class LoanQueries
     {
         private readonly LoanRepository _loanRepository;
         public LoanQueries(LoanRepository loanRepository)
@@ -15,6 +15,7 @@ namespace AndisbankAPI_GraphQL.GraphQL.SchemaGraph
         public IEnumerable<Loan> GetAllLoans(int id)
         {
             var loans = _loanRepository.GetAllLoans(id);
+            loans.ToList<Loan>().Cast<LoanGraphQL>();
             
             return loans;
         }
